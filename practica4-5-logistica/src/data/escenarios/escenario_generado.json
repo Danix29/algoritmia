@@ -1,0 +1,50 @@
+{
+  "nombre": "Escenario Autogenerado (N=4)",
+  "descripcion": "4 pedidos en el campus UAH generados recursivamente.",
+  "peso_furgoneta": 16,
+  "volumen_furgoneta": 21.0,
+  "nodos": [
+    "EPS",
+    "AMB",
+    "CIE",
+    "HOS",
+    "ENF"
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "destino": "AMB",
+      "peso": 1,
+      "volumen": 1.5,
+      "beneficio": 66
+    },
+    {
+      "id": 2,
+      "destino": "CIE",
+      "peso": 2,
+      "volumen": 0.5,
+      "beneficio": 62
+    },
+    {
+      "id": 3,
+      "destino": "HOS",
+      "peso": 6,
+      "volumen": 2.0,
+      "beneficio": 62
+    },
+    {
+      "id": 4,
+      "destino": "ENF",
+      "peso": 1,
+      "volumen": 1.5,
+      "beneficio": 82
+    }
+  ],
+  "grafo": [
+    [[0,0.0], [840,10.0], [1600,19.0], [450,5.4], [280,3.3]],
+    [[840,10.0], [0,0.0], [1270,15.0], [790,9.4], [560,6.7]],
+    [[1600,19.0], [1270,15.0], [0,0.0], [1150,13.6], [1500,17.8]],
+    [[450,5.4], [790,9.4], [1150,13.6], [0,0.0], [730,8.7]],
+    [[280,3.3], [560,6.7], [1500,17.8], [730,8.7], [0,0.0]]
+  ]
+}

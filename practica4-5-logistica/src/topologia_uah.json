@@ -1,0 +1,37 @@
+{
+  "datos": {
+    "tipo_grafo": "ponderado_no_dirigido",
+    "campus": "UAH",
+    "metricas": {
+      "distancia": "metros",
+      "tiempo": "Velocidad 1.4 m/s"
+    }
+  },
+  "nodos": [
+    { "id": "EPS", "x": 20, "y": 85 },
+    { "id": "ENF", "x": 30, "y": 80 },
+    { "id": "MED", "x": 35, "y": 60 },
+    { "id": "HOS", "x": 20, "y": 45 },
+    { "id": "FAR", "x": 50, "y": 45 },
+    { "id": "AMB", "x": 30, "y": 45 },
+    { "id": "QUI", "x": 70, "y": 55 },
+    { "id": "RES", "x": 30, "y": 30 },
+    { "id": "BOT", "x": 50, "y": 0 },
+    { "id": "CIE", "x": 110, "y": 0 }
+  ],
+  "caminos": [
+    { "origen": "EPS", "destino": "ENF", "distancia_m": 280, "tiempo_seg": 200, "tiempo_min": 3.3 },
+    { "origen": "EPS", "destino": "HOS", "distancia_m": 450, "tiempo_seg": 321, "tiempo_min": 5.4 },
+    { "origen": "ENF", "destino": "MED", "distancia_m": 320, "tiempo_seg": 229, "tiempo_min": 3.8 },
+    { "origen": "MED", "destino": "FAR", "distancia_m": 210, "tiempo_seg": 150, "tiempo_min": 2.5 },
+    { "origen": "MED", "destino": "AMB", "distancia_m": 240, "tiempo_seg": 171, "tiempo_min": 2.9 },
+    { "origen": "MED", "destino": "HOS", "distancia_m": 550, "tiempo_seg": 393, "tiempo_min": 6.5 },
+    { "origen": "FAR", "destino": "QUI", "distancia_m": 180, "tiempo_seg": 129, "tiempo_min": 2.1 },
+    { "origen": "FAR", "destino": "RES", "distancia_m": 420, "tiempo_seg": 300, "tiempo_min": 5.0 },
+    { "origen": "AMB", "destino": "QUI", "distancia_m": 120, "tiempo_seg": 86, "tiempo_min": 1.4 },
+    { "origen": "RES", "destino": "BOT", "distancia_m": 380, "tiempo_seg": 271, "tiempo_min": 4.5 },
+    { "origen": "RES", "destino": "CIE", "distancia_m": 550, "tiempo_seg": 393, "tiempo_min": 6.5 },
+    { "origen": "BOT", "destino": "CIE", "distancia_m": 300, "tiempo_seg": 214, "tiempo_min": 3.6 },
+    { "origen": "HOS", "destino": "RES", "distancia_m": 600, "tiempo_seg": 429, "tiempo_min": 7.1 }
+  ]
+}

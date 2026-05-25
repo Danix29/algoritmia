@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+env/
+venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Results generated at runtime
+**/data/resultados/
+*.csv
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

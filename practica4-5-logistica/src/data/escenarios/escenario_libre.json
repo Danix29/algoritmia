@@ -1,0 +1,26 @@
+{
+  "nombre": "Escenario Ruteo Libre (Campus UAH - Ruta Completa)",
+  "descripcion": "7 pedidos heterogeneos por todo el campus. Capacidad amplia para forzar al TSP a trabajar con muchos destinos y comparar eficacia de poda en grafo real.",
+  "peso_furgoneta": 40,
+  "volumen_furgoneta": 150.0,
+  "nodos": ["EPS", "ENF", "MED", "HOS", "FAR", "AMB", "QUI", "RES"],
+  "pedidos": [
+    {"id": 1, "destino": "ENF", "peso": 3, "volumen": 2.0, "beneficio": 55},
+    {"id": 2, "destino": "MED", "peso": 4, "volumen": 2.5, "beneficio": 80},
+    {"id": 3, "destino": "HOS", "peso": 5, "volumen": 3.0, "beneficio": 60},
+    {"id": 4, "destino": "FAR", "peso": 2, "volumen": 1.0, "beneficio": 90},
+    {"id": 5, "destino": "AMB", "peso": 3, "volumen": 1.5, "beneficio": 70},
+    {"id": 6, "destino": "QUI", "peso": 4, "volumen": 2.0, "beneficio": 45},
+    {"id": 7, "destino": "RES", "peso": 2, "volumen": 1.0, "beneficio": 85}
+  ],
+  "grafo": [
+    [[0,0],    [280,3.3], [600,7.1], [450,5.4], [810,9.6],  [840,10.0],[960,11.4],[1230,14.6]],
+    [[280,3.3],[0,0],     [320,3.8], [730,8.7], [530,6.3],  [560,6.7], [680,8.1], [950,11.3]],
+    [[600,7.1],[320,3.8], [0,0],     [550,6.5], [210,2.5],  [240,2.9], [360,4.3], [630,7.5]],
+    [[450,5.4],[730,8.7], [550,6.5], [0,0],     [760,9.0],  [790,9.4], [910,10.8],[600,7.1]],
+    [[810,9.6],[530,6.3], [210,2.5], [760,9.0], [0,0],      [300,3.5], [180,2.1], [420,5.0]],
+    [[840,10.0],[560,6.7],[240,2.9], [790,9.4], [300,3.5],  [0,0],     [120,1.4], [540,6.4]],
+    [[960,11.4],[680,8.1],[360,4.3], [910,10.8],[180,2.1],  [120,1.4], [0,0],     [420,5.0]],
+    [[1230,14.6],[950,11.3],[630,7.5],[600,7.1],[420,5.0],  [540,6.4], [420,5.0], [0,0]]
+  ]
+}

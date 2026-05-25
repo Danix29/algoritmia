@@ -1,0 +1,22 @@
+{
+  "nombre": "Escenario Basico (Campus UAH)",
+  "descripcion": "Reparto en 5 edificios cercanos al almacen. Validacion funcional del sistema.",
+  "peso_furgoneta": 30,
+  "volumen_furgoneta": 100.0,
+  "nodos": ["EPS", "ENF", "MED", "HOS", "FAR", "AMB"],
+  "pedidos": [
+    {"id": 1, "destino": "ENF", "peso": 2, "volumen": 1.5, "beneficio": 30},
+    {"id": 2, "destino": "MED", "peso": 5, "volumen": 2.0, "beneficio": 70},
+    {"id": 3, "destino": "HOS", "peso": 3, "volumen": 1.0, "beneficio": 40},
+    {"id": 4, "destino": "FAR", "peso": 1, "volumen": 0.5, "beneficio": 10},
+    {"id": 5, "destino": "AMB", "peso": 4, "volumen": 2.5, "beneficio": 60}
+  ],
+  "grafo": [
+    [[0,0],    [280,3.3], [600,7.1], [450,5.4], [810,9.6], [840,10.0]],
+    [[280,3.3],[0,0],     [320,3.8], [730,8.7], [530,6.3], [560,6.7]],
+    [[600,7.1],[320,3.8], [0,0],     [550,6.5], [210,2.5], [240,2.9]],
+    [[450,5.4],[730,8.7], [550,6.5], [0,0],     [760,9.0], [790,9.4]],
+    [[810,9.6],[530,6.3], [210,2.5], [760,9.0], [0,0],     [300,3.5]],
+    [[840,10.0],[560,6.7],[240,2.9], [790,9.4], [300,3.5], [0,0]]
+  ]
+}

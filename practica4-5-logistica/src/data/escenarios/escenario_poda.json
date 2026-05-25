@@ -1,0 +1,22 @@
+{
+  "nombre": "Escenario Poda - CIE (Campus UAH)",
+  "descripcion": "CIE esta a mas de 1000m del almacen central. Visitarlo en posicion intermedia dispara el coste y activa la poda.",
+  "peso_furgoneta": 50,
+  "volumen_furgoneta": 200.0,
+  "nodos": ["EPS", "ENF", "MED", "FAR", "AMB", "CIE"],
+  "pedidos": [
+    {"id": 1, "destino": "ENF", "peso": 3, "volumen": 1.5, "beneficio": 50},
+    {"id": 2, "destino": "MED", "peso": 3, "volumen": 1.5, "beneficio": 50},
+    {"id": 3, "destino": "FAR", "peso": 3, "volumen": 1.5, "beneficio": 50},
+    {"id": 4, "destino": "AMB", "peso": 3, "volumen": 1.5, "beneficio": 50},
+    {"id": 5, "destino": "CIE", "peso": 3, "volumen": 1.5, "beneficio": 50}
+  ],
+  "grafo": [
+    [[0,0],      [280,3.3],  [600,7.1],  [810,9.6],  [840,10.0], [1910,22.7]],
+    [[280,3.3],  [0,0],      [320,3.8],  [530,6.3],  [560,6.7],  [1630,19.4]],
+    [[600,7.1],  [320,3.8],  [0,0],      [210,2.5],  [240,2.9],  [1310,15.6]],
+    [[810,9.6],  [530,6.3],  [210,2.5],  [0,0],      [300,3.5],  [1100,13.1]],
+    [[840,10.0], [560,6.7],  [240,2.9],  [300,3.5],  [0,0],      [1220,14.5]],
+    [[1910,22.7],[1630,19.4],[1310,15.6],[1100,13.1],[1220,14.5],[0,0]]
+  ]
+}
